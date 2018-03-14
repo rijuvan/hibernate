@@ -1,0 +1,10 @@
+Day 1 Demo
+-- Create 
+-- Delete 
+---Read / read all
+-- Update 
+---Table Annotation 
+----Column Annotation  (Transient )
+---Embaded and Embadable and Ebaded Id 
+----Update using session 
+----More --
