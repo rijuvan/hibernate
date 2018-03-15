@@ -1,6 +1,7 @@
 package com.soft.domain;
 
 import javax.annotation.Generated;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -8,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="emp")
+@Table(name="emp11")
 public class Employee {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -27,10 +28,11 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(int empId, String empName) {
+	public Employee(int empId, String empName,double sal) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
+		this.sal=sal;
 	}
 
 	/**
@@ -61,7 +63,23 @@ public class Employee {
 		this.empName = empName;
 	}
 
-	private String empName;
 	
+	private String empName;
+	@Column(name="emp_Sal")
+	private double sal;
+
+	/**
+	 * @return the sal
+	 */
+	public double getSal() {
+		return sal;
+	}
+
+	/**
+	 * @param sal the sal to set
+	 */
+	public void setSal(double sal) {
+		this.sal = sal;
+	}
 
 }

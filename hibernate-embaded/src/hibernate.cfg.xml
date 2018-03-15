@@ -26,7 +26,7 @@
 		</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
-		<mapping class="com.soft.domain.Employee" />
+		<mapping class="com.soft.model.User" />
 	</session-factory>
 
 
